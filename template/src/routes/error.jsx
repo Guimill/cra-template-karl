@@ -2,7 +2,7 @@ import { useRouteError } from "react-router-dom"
 
 export default function Index() {
 
-    const error = useRouterError();
+    const error = useRouteError();
     console.error(error);
 
     return (
