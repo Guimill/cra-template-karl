@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import './assets/style/css/style.css';
 import Root from './routes/root';
+import Index from './routes';
 import Error from './routes/error';
 
 const router = createBrowserRouter([
@@ -15,8 +16,12 @@ const router = createBrowserRouter([
         errorElement: <Error />,
         children: [
             {
+                index: true,
+                element: <Index />,
+            },
+            {
                 path: "",
-                element: </>,
+                element: <div />,
             }
         ]
     }
