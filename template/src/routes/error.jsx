@@ -7,11 +7,15 @@ export default function Index() {
 
     return (
         <>
+            <Banner />
+            <Navbar />
             <div>
                 <h1>Oops!</h1>
                 <p>Une petite erreur de parcours</p>
                 <b> {error.statusText || error.message} </b>
             </div>
+            <Footer />
+
         </>
     )
 
